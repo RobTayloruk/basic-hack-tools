@@ -11,3 +11,7 @@ Quick start
 1. Download or clone the repo
 2. Make scripts executable: `chmod +x hack.sh`
 3. Run: `./hack.sh --help`
+
+Examples
+- ./hack.sh --say "Hello"
+- ./hack.sh --timestamp
