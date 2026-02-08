@@ -1,0 +1,15 @@
+import socket
+
+def scan(host, ports):
+    print(f"Scanning {host}...")
+    for port in ports:
+        try:
+            with socket.create_connection((host, port), timeout=1):
+                print(f"[+] Port {port} open")
+        except:
+            pass
+
+if __name__ == "__main__":
+    target = "127.0.0.1"
+    ports = range(20, 1025)
+    scan(target, ports)
